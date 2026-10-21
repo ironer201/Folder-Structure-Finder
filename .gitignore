@@ -1,0 +1,7 @@
+__pycache__/
+dist/
+build/
+lovable-project-fbe33c41/
+project_structure.txt
+main.spec
+.DS_Store
