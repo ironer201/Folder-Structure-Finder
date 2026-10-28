@@ -21,13 +21,14 @@ Requires:  scanner.py and formatter.py in the same folder.
 
 import sys
 import threading
-import tkinter as tk
+import tkinter as tk 
 from tkinter import font as tkfont
 
 sys.dont_write_bytecode = True
 
 from pathlib import Path
 
+from app_paths import app_dir
 from backendOption import (
     MODE_ALL,
     MODE_ALL_SHORT_NAMES,
@@ -76,8 +77,8 @@ class ScannerUI:
         # Scan target: the folder the app is currently running in
         self.project_root = Path.cwd()
         self.output_file = DEFAULT_OUTPUT
-        # Report is saved in the same folder the program is in
-        self.output_dir = self.project_root
+        # Report is saved next to the executable when frozen, else in the CWD
+        self.output_dir = app_dir()
 
         # Guard so the user can't launch multiple scans at once
         self.is_scanning = False
@@ -370,9 +371,9 @@ class ScannerUI:
                 if self.output_dir:
                     output_dir = Path(self.output_dir).expanduser().resolve()
                 else:
-                    output_dir = self.project_root
+                    output_dir = app_dir()
             except Exception:
-                output_dir = Path.cwd()
+                output_dir = app_dir()
 
             try:
                 output_dir.mkdir(parents=True, exist_ok=True)

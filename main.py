@@ -14,6 +14,7 @@ sys.dont_write_bytecode = True
 
 from pathlib import Path
 
+from app_paths import app_dir
 from scanner import Scanner
 from formatter import render_tree, generate_report, print_tree
 
@@ -77,7 +78,10 @@ def parse_args(argv=None):
         "--output-dir",
         default=None,
         metavar="DIR",
-        help="Directory to save output (defaults to parent of scanned folder or user home).",
+        help=(
+            "Directory to save output (default: the folder containing the "
+            "executable when frozen, otherwise the current working directory)."
+        ),
     )
     return parser.parse_args(argv)
 
@@ -138,8 +142,8 @@ def run_cli(argv=None) -> int:
     if args.output_dir:
         output_dir = Path(args.output_dir).expanduser().resolve()
     else:
-        # Save the report in the folder the program is in
-        output_dir = Path.cwd()
+        # Save next to the executable when frozen (PyInstaller), else in the CWD
+        output_dir = app_dir()
 
     try:
         output_dir.mkdir(parents=True, exist_ok=True)

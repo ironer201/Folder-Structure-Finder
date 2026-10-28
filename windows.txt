@@ -1,0 +1,2 @@
+Windows export
+pyinstaller --clean --noconfirm main.spec
