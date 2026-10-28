@@ -9,6 +9,10 @@ Paste it into ChatGPT, Claude, or your CLI agent so it finally understands your 
 ![Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen)
 ![Interface](https://img.shields.io/badge/interface-GUI%20%2B%20CLI-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
+[![Release](https://img.shields.io/github/v/release/ironer201/Folder-Structure-Finder)](https://github.com/ironer201/Folder-Structure-Finder/releases/latest)
+![Downloads](https://img.shields.io/github/downloads/ironer201/Folder-Structure-Finder/total)
+
+[**⬇️ Download**](https://github.com/ironer201/Folder-Structure-Finder/releases/tag/v1.0.0) · [**🚀 Quick start**](#quick-start) · [**✨ Features**](#features)
 
 </div>
 
@@ -19,15 +23,18 @@ Paste it into ChatGPT, Claude, or your CLI agent so it finally understands your 
 LLMs can't see your project structure, and running `tree` dumps `node_modules`, `.git`, and caches that waste your context window. **Folder-Structure-Finder** scans a directory, filters the junk, and exports a compact `project_structure.txt` with file, line, and size stats, ready to paste into any AI tool.
 
 ```text
-my-project/
-├── 📁 src/
-│   ├── 📁 utils/
-│   │   └── helpers.py
-│   ├── app.py
-│   └── config.py
-├── 📁 tests/
-│   └── test_app.py
-└── README.md
+Python Project/
+├── .gitignore
+├── app_paths.py 
+├── backendOption.py
+├── formatter.py
+├── main.py
+├── ReadME.md
+├── scanner.py
+├── ui.py
+├── README.md
+└── windows.txt
+
 
 Folders: 3 | Files: 5 | Lines: 1,284 | Size: 86.4 KB
 ```
@@ -43,10 +50,23 @@ Folders: 3 | Files: 5 | Lines: 1,284 | Size: 86.4 KB
 - 💾 **Portable output:** saves next to the executable or in the current directory
 - 📦 **Zero dependencies:** pure Python standard library
 
+## ⬇️ Download (no Python needed)
+
+Ready-to-run executables for **Windows** and **Linux** are available on the release page:
+
+### 👉 [Download v1.0.0](https://github.com/ironer201/Folder-Structure-Finder/releases/tag/v1.0.0)
+
+| Platform | How to run |
+|---|---|
+| 🪟 **Windows** | Download the `.exe` and double-click it. If SmartScreen warns you, click *More info → Run anyway* (the app is unsigned). |
+| 🐧 **Linux** | Download the file, then run `chmod +x <file>` and `./<file>` |
+
+Prefer running from source? See [Quick start](#quick-start) below.
+
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-username>/Folder-Structure-Finder.git
+git clone https://github.com/ironer201/Folder-Structure-Finder.git
 cd Folder-Structure-Finder
 python main.py                                  # launch the GUI
 python main.py --cli --path . --max-depth 3     # or use the CLI
