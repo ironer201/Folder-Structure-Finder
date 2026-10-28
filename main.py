@@ -1,5 +1,5 @@
 """
-main.py
+main.py code is updated
 
 Entry point for the folder-structure scanner tool.
 
