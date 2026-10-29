@@ -16,7 +16,7 @@ Paste it into ChatGPT, Claude, or your CLI agent so it finally understands your 
 
 [**🚀 Quick start**](#quick-start) · [**✨ Features**](#features) · [**📦 Releases**](https://github.com/ironer201/Folder-Structure-Finder/releases)
 
-<img src="assets/screenshot.png" alt="Folder-Structure-Finder screenshot" width="700">
+<img src="assets/Screenshot.png" alt="Folder-Structure-Finder screenshot" width="700">
 
 </div>
 
