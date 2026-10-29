@@ -12,7 +12,11 @@ Paste it into ChatGPT, Claude, or your CLI agent so it finally understands your 
 [![Release](https://img.shields.io/github/v/release/ironer201/Folder-Structure-Finder)](https://github.com/ironer201/Folder-Structure-Finder/releases/latest)
 ![Downloads](https://img.shields.io/github/downloads/ironer201/Folder-Structure-Finder/total)
 
-[**⬇️ Download**](https://github.com/ironer201/Folder-Structure-Finder/releases/tag/v1.0.0) · [**🚀 Quick start**](#quick-start) · [**✨ Features**](#features)
+<a href="https://github.com/ironer201/Folder-Structure-Finder/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/DOWNLOAD_NOW-Windows_%7C_Linux-2ea44f?style=for-the-badge&logo=github&logoColor=white" height="60" alt="Download Folder-Structure-Finder"></a>
+
+[**🚀 Quick start**](#quick-start) · [**✨ Features**](#features) · [**📦 Releases**](https://github.com/ironer201/Folder-Structure-Finder/releases)
+
+<img src="assets/screenshot.png" alt="Folder-Structure-Finder screenshot" width="700">
 
 </div>
 
@@ -54,7 +58,7 @@ Folders: 3 | Files: 5 | Lines: 1,284 | Size: 86.4 KB
 
 Ready-to-run executables for **Windows** and **Linux** are available on the release page:
 
-### 👉 [Download v1.0.0](https://github.com/ironer201/Folder-Structure-Finder/releases/tag/v1.0.0)
+<p align="center"><a href="https://github.com/ironer201/Folder-Structure-Finder/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/DOWNLOAD_NOW-Windows_%7C_Linux-2ea44f?style=for-the-badge&logo=github&logoColor=white" height="60" alt="Download Folder-Structure-Finder"></a></p>
 
 | Platform | How to run |
 |---|---|
